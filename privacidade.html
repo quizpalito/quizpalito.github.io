@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidade | Quiz Palito</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito+Sans:wght@400;700&display=swap">
+<style>
+/* Layout: one readable column, a mascot-orange title band, two policy sections with anchors */
+:root {
+  --bg: #f6f7fb; --fg: #17213f; --muted: #55607e; --accent: #f08a00; --line: #dde1ec; --card: #ffffff;
+  --display: "Baloo 2", "Trebuchet MS", sans-serif; --body: "Nunito Sans", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #11162a; --fg: #e8ebf5; --muted: #a3abc6; --accent: #ffa733; --line: #2a3150; --card: #181e36; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #11162a; --fg: #e8ebf5; --muted: #a3abc6; --accent: #ffa733; --line: #2a3150; --card: #181e36; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font: 16px/1.65 var(--body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 40px 64px; }
+main { max-width: 680px; margin: 0 auto; display: grid; gap: 32px; }
+header { display: grid; gap: 8px; }
+.selo { justify-self: start; font: 800 15px/1 var(--display); letter-spacing: .04em; padding: 8px 14px; border-radius: 999px;
+  background: var(--card); border: 2px solid var(--fg); }
+.selo b { color: var(--accent); }
+h1 { font: 800 clamp(30px, 6vw, 42px)/1.1 var(--display); margin: 8px 0 0; text-wrap: balance; }
+.sub { color: var(--muted); margin: 0; }
+nav { display: flex; flex-wrap: wrap; gap: 8px 20px; font-weight: 700; }
+nav a, a { color: var(--accent); }
+section { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 24px; display: grid; gap: 12px; }
+h2 { font: 800 24px/1.2 var(--display); margin: 0; }
+h3 { font: 700 13px/1.3 var(--body); text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 12px 0 0; }
+p, ul { margin: 0; } ul { padding-left: 20px; display: grid; gap: 6px; }
+.en { border-top: 1px solid var(--line); padding-top: 12px; color: var(--muted); font-size: 15px; }
+footer { color: var(--muted); font-size: 14px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<main>
+<header>
+<span class="selo"><b>QUIZ</b> PALITO</span>
+<h1>Política de privacidade</h1>
+<p class="sub">Ferramenta interna que publica os vídeos do canal Quiz Palito (@quizpalitos) no TikTok e no YouTube. Atualizado em 4 de novembro de 2026.</p>
+<nav><a href="termos.html">Termos de uso</a><a href="privacidade.html">Política de privacidade</a><a href="https://www.youtube.com/channel/UCerGMTooT9vl4yVgW7Ggd3A">Canal no YouTube</a></nav>
+</header>
+<section id="privacidade">
+    <h2>Política de privacidade</h2>
+    <h3>Dados usados</h3>
+    <ul>
+      <li>Nome de usuário e informações básicas da conta conectada (escopo <code>user.info.basic</code>).</li>
+      <li>Permissão para publicar vídeos na conta (escopo <code>video.publish</code>).</li>
+      <li>Um token de acesso, guardado criptografado como segredo do repositório privado do canal.</li>
+    </ul>
+    <h3>O que não fazemos</h3>
+    <ul>
+      <li>Não coletamos dados de seguidores, espectadores ou outras pessoas.</li>
+      <li>Não vendemos nem compartilhamos dados com terceiros.</li>
+      <li>Não usamos os dados para anúncios.</li>
+    </ul>
+    <h3>Como apagar</h3>
+    <p>Para remover o acesso, desconecte o app nas configurações de segurança do TikTok. O token guardado é apagado em seguida.</p>
+    <p class="en"><strong>English.</strong> We only use the connected account's basic info and video publishing permission to post the channel's own videos. The access token is stored encrypted as a secret in the channel's private repository. No data about other people is collected, sold or shared. Access can be revoked at any time in TikTok's security settings.</p>
+  </section>
+<footer>Contato: quizpalito@gmail.com</footer>
+</main>
+</body>
+</html>
